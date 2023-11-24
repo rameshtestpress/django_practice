@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'CSS/style.css' %}" />
+<h1>ramesh</h1>
+<img
+  src="{% static 'images/basecamp.png'%}"
+  width="500"
+  height="100"
+  class="img"
+/>
+<
+{% comment %}
+<h1>{{emp_dict.empno}}</h1>
+{% endcomment %} {{emp_dict}}
+<table border=2>
+  {% for employee in emp_list %}
+  <tr>
+    <td>{{employee.empno}}</td>
+    <td>{{employee.empsal}}</td>
+    <td>{{employee.empname}}</td>
+  </tr>
+  {% endfor %}
+</table>
